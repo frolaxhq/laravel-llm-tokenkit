@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Frolax\LlmTokenKit\Data\CostBreakdown;
 use Frolax\LlmTokenKit\Data\Pricing;
 use Frolax\LlmTokenKit\Data\TokenUsage;
 use Frolax\LlmTokenKit\Pricing\CostCalculator;

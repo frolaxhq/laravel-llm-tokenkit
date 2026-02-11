@@ -95,7 +95,7 @@ class ContextBuilder
         if ($request->memorySummary !== null && $request->memorySummary !== '') {
             $pinned[] = [
                 'role' => 'system',
-                'content' => "[Memory Summary]\n" . $request->memorySummary,
+                'content' => "[Memory Summary]\n".$request->memorySummary,
             ];
         }
 

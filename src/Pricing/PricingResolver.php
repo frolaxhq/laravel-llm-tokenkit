@@ -66,7 +66,7 @@ class PricingResolver
         }
 
         // Convert wildcard pattern to regex
-        $regex = '/^' . str_replace('\*', '.*', preg_quote($pattern, '/')) . '$/';
+        $regex = '/^'.str_replace('\*', '.*', preg_quote($pattern, '/')).'$/';
 
         return (bool) preg_match($regex, $modelName);
     }

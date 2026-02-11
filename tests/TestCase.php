@@ -2,8 +2,8 @@
 
 namespace Frolax\LlmTokenKit\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Frolax\LlmTokenKit\LlmTokenKitServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

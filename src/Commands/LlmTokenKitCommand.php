@@ -33,7 +33,7 @@ class LlmTokenKitCommand extends Command
 
         foreach ($tokenizerLibs as $class => $package) {
             if (class_exists($class)) {
-                $this->components->twoColumnDetail("<fg=cyan>Tokenizer lib detected</>", "<fg=green>{$package}</>");
+                $this->components->twoColumnDetail('<fg=cyan>Tokenizer lib detected</>', "<fg=green>{$package}</>");
                 $tokenizerDetected = true;
             }
         }
@@ -54,7 +54,7 @@ class LlmTokenKitCommand extends Command
         $englishText = 'The quick brown fox jumps over the lazy dog. This is a sample sentence to test token estimation.';
         $englishEstimate = $chain->estimateText($englishText, $model);
         $this->components->twoColumnDetail(
-            'English text (' . mb_strlen($englishText) . ' chars)',
+            'English text ('.mb_strlen($englishText).' chars)',
             sprintf('<fg=green>~%d tokens</> (confidence: %s)', $englishEstimate->inputTokensEstimated, $englishEstimate->confidence->value),
         );
 
@@ -62,7 +62,7 @@ class LlmTokenKitCommand extends Command
         $jsonText = '{"users": [{"name": "John", "age": 30}, {"name": "Jane", "age": 25}]}';
         $jsonEstimate = $chain->estimateText($jsonText, $model);
         $this->components->twoColumnDetail(
-            'JSON payload (' . mb_strlen($jsonText) . ' chars)',
+            'JSON payload ('.mb_strlen($jsonText).' chars)',
             sprintf('<fg=green>~%d tokens</> (confidence: %s)', $jsonEstimate->inputTokensEstimated, $jsonEstimate->confidence->value),
         );
 
@@ -70,7 +70,7 @@ class LlmTokenKitCommand extends Command
         $banglaText = 'আমি বাংলায় গান গাই। বাংলা আমার মাতৃভাষা।';
         $banglaEstimate = $chain->estimateText($banglaText, $model);
         $this->components->twoColumnDetail(
-            'Bangla text (' . mb_strlen($banglaText) . ' chars)',
+            'Bangla text ('.mb_strlen($banglaText).' chars)',
             sprintf('<fg=green>~%d tokens</> (confidence: %s)', $banglaEstimate->inputTokensEstimated, $banglaEstimate->confidence->value),
         );
 

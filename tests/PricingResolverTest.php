@@ -7,7 +7,7 @@ use Frolax\LlmTokenKit\Data\Pricing;
 use Frolax\LlmTokenKit\Pricing\PricingResolver;
 
 beforeEach(function () {
-    $this->resolver = new PricingResolver();
+    $this->resolver = new PricingResolver;
 });
 
 describe('pricing match precedence', function () {

@@ -8,7 +8,7 @@ use Frolax\LlmTokenKit\Enums\EstimationMethod;
 use Frolax\LlmTokenKit\Estimators\HeuristicEstimator;
 
 beforeEach(function () {
-    $this->estimator = new HeuristicEstimator();
+    $this->estimator = new HeuristicEstimator;
     $this->model = new ModelRef(provider: 'openai', model: 'gpt-4');
 });
 

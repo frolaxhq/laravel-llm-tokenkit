@@ -11,7 +11,7 @@ use Frolax\LlmTokenKit\Estimators\EstimatorChain;
 use Frolax\LlmTokenKit\Estimators\HeuristicEstimator;
 
 beforeEach(function () {
-    $this->chain = new EstimatorChain(new HeuristicEstimator());
+    $this->chain = new EstimatorChain(new HeuristicEstimator);
     $this->builder = new ContextBuilder($this->chain);
     $this->model = new ModelRef(provider: 'openai', model: 'gpt-4', contextLimit: 128_000);
 });
