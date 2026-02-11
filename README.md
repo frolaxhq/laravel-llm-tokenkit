@@ -1,7 +1,7 @@
 # LLM TokenKit for Laravel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/frolax/laravel-llm-tokenkit.svg?style=flat-square)](https://packagist.org/packages/frolax/laravel-llm-tokenkit)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/frolax/laravel-llm-tokenkit/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/frolax/laravel-llm-tokenkit/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/frolaxhq/laravel-llm-tokenkit/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/frolaxhq/laravel-llm-tokenkit/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/frolax/laravel-llm-tokenkit.svg?style=flat-square)](https://packagist.org/packages/frolax/laravel-llm-tokenkit)
 
 **Token estimation, cost calculation & context-window utilities for LLM-powered Laravel apps.**

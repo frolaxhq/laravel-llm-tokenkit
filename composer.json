@@ -11,7 +11,7 @@
         "context-window",
         "laravel-llm-tokenkit"
     ],
-    "homepage": "https://github.com/frolax/laravel-llm-tokenkit",
+    "homepage": "https://github.com/frolaxhq/laravel-llm-tokenkit",
     "license": "MIT",
     "authors": [
         {
