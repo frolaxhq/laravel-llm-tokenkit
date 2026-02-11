@@ -1,9 +1,14 @@
 {
     "name": "frolax/laravel-llm-tokenkit",
-    "description": "This is my package laravel-llm-tokenkit",
+    "description": "Token estimation, cost calculation & context-window utilities for LLM-powered Laravel apps",
     "keywords": [
         "Frolax",
         "laravel",
+        "llm",
+        "tokenizer",
+        "token-estimation",
+        "cost-calculation",
+        "context-window",
         "laravel-llm-tokenkit"
     ],
     "homepage": "https://github.com/frolax/laravel-llm-tokenkit",
@@ -16,9 +21,9 @@
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.2",
         "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^11.0||^12.0"
+        "illuminate/contracts": "^10.0||^11.0||^12.0"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -30,8 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Frolax\\LlmTokenKit\\": "src/",
-            "Frolax\\LlmTokenKit\\Database\\Factories\\": "database/factories/"
+            "Frolax\\LlmTokenKit\\": "src/"
         }
     },
     "autoload-dev": {
