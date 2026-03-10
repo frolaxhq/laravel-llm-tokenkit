@@ -1,5 +1,5 @@
 {
-    "name": "frolax/laravel-llm-tokenkit",
+    "name": "frolaxhq/laravel-llm-tokenkit",
     "description": "Token estimation, cost calculation & context-window utilities for LLM-powered Laravel apps",
     "keywords": [
         "Frolax",
